@@ -1,26 +1,156 @@
 .page {
   min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
-}
 
+  margin: 0;
+  padding: 0;
+}
+/******HEADER start******/
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  position: relative;
+
+  background-color:  #f2f2f2;
+
+  /*вертикальное выравнивание лучше ничего не придумала...*/
+  line-height: 600px;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
 }
+.logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  height: 32px;
+  width: 228px;
+}
+.header_title {
+  margin: 0;
+  padding-left: 64px;
+  display: flex;
+  max-width: 730px;
+
+  font-size: 102px;
+  font-weight: 600;
+  line-height: 96px;
+  z-index: 3;
+
+ /*вертикальное выравнивание лучше ничего не придумала...*/
+  line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.header_subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.header_link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header_main-illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  z-index: 2;
+}
+.header_square-pic {
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  background-color: #2f80ed;
+  z-index: 1;
+
+}
+
+/******HEADER end******/
+
+/******content start******/
+
+/******description start******/
+
+.description {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.two-columns {
+  display: flex;
+  width: 80%
+}
+
+.two-columns_brief {
+  width: 175px;
+
+  color: #2f80ed;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin: 0;
+
+
+}
+.two-columns_main-text {
+  gap: 30px;
+  min-width: 784px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.two-columns_paragraph {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+  margin: 0;
+}
+.two-columns_paragraph_span-accent {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+
+/******description end******/
+
+/******digits start******/
+
+
+/******digits end******/
+
+/******feynman start******/
+
+
+/******feynman end******/
+
+/******kaufman start******/
+
+
+/******kaufman end******/
+
+/******content end******/
+
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
