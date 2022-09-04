@@ -6,6 +6,7 @@
 
   margin: 0;
   padding: 0;
+
 }
 /******HEADER start******/
 .header {
@@ -13,6 +14,7 @@
   min-height: 600px;
   max-height: 756px;
   position: relative;
+  overflow: hidden;
 
   background-color:  #f2f2f2;
 
@@ -31,7 +33,7 @@
   height: 32px;
   width: 228px;
 }
-.header_title {
+.header__title {
   margin: 0;
   padding-left: 64px;
   display: flex;
@@ -49,7 +51,7 @@
 
 }
 
-.header_subtitle {
+.header__subtitle {
   position: absolute;
   bottom: 30px;
   left: 64px;
@@ -60,12 +62,12 @@
   line-height: 25px;
 }
 
-.header_link {
+.header__link {
   color: #2f80ed;
   text-decoration: none;
 }
 
-.header_main-illustration {
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -73,7 +75,7 @@
   right: 0;
   z-index: 2;
 }
-.header_square-pic {
+.header__square-pic {
   width: 568px;
   height: 568px;
   position: absolute;
@@ -97,34 +99,32 @@
 }
 .two-columns {
   display: flex;
-  width: 80%
+  width: 80%;
+  justify-content: space-between;
 }
 
-.two-columns_brief {
+.two-columns__brief {
   width: 175px;
-
   color: #2f80ed;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.2;
   margin: 0;
-
-
 }
-.two-columns_main-text {
+.two-columns__main-text {
   gap: 30px;
   min-width: 784px;
   width: 80%;
   display: flex;
   flex-direction: column;
 }
-.two-columns_paragraph {
+.two-columns__paragraph {
   font-size: 24px;
   font-weight: normal;
   line-height: 34px;
   margin: 0;
 }
-.two-columns_paragraph_span-accent {
+.two-columns__span-accent {
   font-size: 24px;
   font-weight: 600;
   line-height: 34px;
@@ -134,28 +134,274 @@
 /******description end******/
 
 /******digits start******/
+.digits {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.section-title {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
+
+}
+.section-subtitle {
+  width: 60%;
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+}
+.table {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.table__cell {
+  padding-top: 60px;
+  width: 250px;
+}
+.table__heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;
+}
+.table__text {
+  padding-top: 20px;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;
+}
 
 /******digits end******/
 
 /******feynman start******/
 
+.feynman {
+  height: 890px;
+  background-color:  #f2f2f2;
+  background-position: left bottom;
+  position: relative;
+  z-index: 1;
+}
+.feynman__title {
+  padding-top: 100px;
+  width: 648px;
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+
+  font-size: 120px;
+  font-weight: 600;
+  line-height: 1.15;
+
+}
+.feynman__subtitle {
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 70px;
+
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+}
+.feynman__link {
+  color: #2f80ed;
+  right: 48px;
+  position: absolute;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 2;
+}
+.feynman__pic {
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
 
 /******feynman end******/
 
 /******kaufman start******/
+.kaufman {
+  background-color: #1f1f1f;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  z-index: -10;
 
 
-/******kaufman end******/
+}
+.section-title_theme_dark {
+  padding-top: 90px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 
-/******content end******/
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 1.15;
 
 
+}
+.section-subtitle_theme_dark {
+  padding-top: 20px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
 
-/* и элемента с модификатором вида ключ-значение */
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+
+}
+.table {
+
+}
+.table_theme_dark {
+  color: white;
+  /*width: 70%;*/
+
+  flex-wrap: wrap;
+ /* justify-content: space-around;*/
+  padding-bottom: 90px;
+  z-index: 1;
+}
+.table__cell {
+
+}
 .table__cell_theme_dark {
+  margin-right: 0;
+  margin-top: 20px;
   width: 200px;
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
+
 }
+.table__heading {
+
+}
+.table__heading_theme_dark {
+  /*font-size: 24px;
+  font-weight: 600;
+  line-height: 1.15;*/
+  color: white;
+}
+.table__text {
+
+}
+.table__text_theme_dark {
+  /*padding-top: 20px;
+
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.2;*/
+  color: white;
+
+}
+.kaufman__triangle {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  right: -320px;
+  width: 877px;
+  height: 877px;
+  /*треугольник не получилось поставить по другому*/
+
+}
+/******kaufman end******/
+/******content end******/
+
+/******footer start******/
+.footer {
+  height: 350px;
+  background-color:  #1f1f1f;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+}
+.footer__columns {
+  display: flex;
+  /*flex-basis: 711px;*/
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer__columns_content_copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 120px;
+  margin-right: 600px;
+}
+.logo_place_footer {
+  height: 32px;
+  width: 228px;
+}
+.footer__author {
+  padding-bottom: 18px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.footer__columns_content_info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  align-items: flex-start;
+}
+.footer__column-heading {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-top: 0;
+}
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.footer__column-link {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+}
+.footer__columns_content_social {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  align-items: flex-start;
+}
+.footer__social-icon {
+  padding-right: 10px;
+}
+/******footer end******/
+
+
+
+
