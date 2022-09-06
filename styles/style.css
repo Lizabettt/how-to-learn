@@ -26,7 +26,7 @@
   position: absolute;
   top: 30px;
   left: 64px;
-  background-image: url(/images/logo_place_header.svg);
+  background-image: url(../images/logo_place_header.svg);
 }
 .header__title {
   margin: 0;
@@ -295,6 +295,7 @@
   margin: 0 auto;
   color: white;
   display: flex;
+  box-sizing: border-box;
 }
 .footer__columns {
   display: flex;
@@ -347,7 +348,7 @@
   font-weight: normal;
   line-height: 30px;
 }
-.footer__social {
+.footer__link {
   text-decoration: none;
   color: white;
 }
