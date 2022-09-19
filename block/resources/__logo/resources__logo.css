@@ -1,0 +1,24 @@
+.resources__logo{
+  display: flex;
+  width: 270px;
+  height: 38px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#arzamas{
+  background-image: url(/images/logo/resources-arzamas.svg);
+  }
+
+#n1{
+  background-image: url(/images/logo/resources-n1.svg)
+}
+
+#strelka{
+  background-image: url(/images/logo/resources-strelka.svg)
+}
+
+#polka{
+  background-image: url(/images/logo/resources-polka.svg)
+}

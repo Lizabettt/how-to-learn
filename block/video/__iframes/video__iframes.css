@@ -1,0 +1,8 @@
+.video__iframes{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.video__iframes :first-child {
+  padding-right: 20px;
+}

@@ -1,0 +1,6 @@
+.table_theme_dark {
+  flex-wrap: wrap;
+  padding-bottom: 90px;
+  position: relative;
+  z-index: 1;
+}
